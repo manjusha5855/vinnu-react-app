@@ -441,7 +441,7 @@ export default App;
 */
 
 
-
+/*
 import React from 'react';
 import './App.css';
 import { Routes,Route,Link } from 'react-router-dom';
@@ -453,7 +453,7 @@ import About from './js/About';
     <nav>
       <ul> 
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/">Home</Link>    
         </li>
         <li>
           <Link to="/about">About</Link>
@@ -471,5 +471,170 @@ import About from './js/About';
 
 export default App;
 
+*/
+/*
+import React from 'react';
+import './App.css';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import Home from './js/Home';
+import About from './js/About';
+import SignUpForm from './js/SignUpForm';
+import Footer from './js/Footer';
+import Header from './js/header';
+
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        <Header />
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/signup">Sign Up</Link>
+            </li>
+          </ul>
+        </nav>
+        <Route path="/" exact component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/signup" component={SignUpForm} />
+        <Footer />
+      </div>
+    </Router>
+  );
+}
+
+export default App;
+
+*/
+/*
+import React from 'react';
+import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import Home from './js/Home';
+import About from './js/About';
+import SignUpForm from './js/SignUpForm';
+import Footer from './js/Footer';
+import Header from './js/header';
+
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        <Header />
+        <nav>
+          <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/about">About</a>
+            </li>
+            <li>
+              <a href="/signup">Sign Up</a>
+            </li>
+          </ul>
+        </nav>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/signup" element={<SignUpForm />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
+  );
+}
+
+export default App;
+*/
+/*
+import React from 'react';
+import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import Home from './js/Home';
+import About from './js/About';
+import SignUpForm from './js/SignUpForm';
+import Footer from './js/Footer';
+import Header from './js/header';
+
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        <Header />
+        <nav>
+          <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/about">About</a>
+            </li>
+            <li>
+              <a href="/signup">Sign Up</a>
+            </li>
+          </ul>
+        </nav>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/signup" element={<SignUpForm />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
+  );
+}
+
+export default App;
+*/
 
 
+import React from 'react';
+import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import Home from './js/Home';
+import About from './js/About';
+import SignUpForm from './js/SignUpForm';
+import Footer from './js/Footer';
+import Header from './js/header';
+
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        <Header />
+        <nav>
+          <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/about">About</a>
+            </li>
+            <li>
+              <a href="/signup">Sign Up</a>
+            </li>
+          </ul>
+        </nav>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/signup" element={<SignUpForm />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
+  );
+}
+
+export default App;
