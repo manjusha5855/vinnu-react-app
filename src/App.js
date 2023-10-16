@@ -609,11 +609,21 @@ import Footer from './js/Footer';
 import Header from './js/header';
 
 function App() {
+  let imageStyle = {
+    height: "1500px",
+    width: "1500px",
+    backgroundImage:
+    'url("https://img.freepik.com/free-photo/wide-angle-shot-singletree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg")',
+    backgroundSize: "contain",
+    backgroundRepeat: "no-repeat",
+    color: "white", 
+    
+ };
   return (
     <Router>
-      <div className="App">
+      <div className="App"  style = {imageStyle}>
         <Header />
-        <nav>
+        <center><nav>
           <ul>
             <li>
               <a href="/">Home</a>
@@ -631,7 +641,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/signup" element={<SignUpForm />} />
         </Routes>
-        <Footer />
+        <Footer /></center>
+        
       </div>
     </Router>
   );

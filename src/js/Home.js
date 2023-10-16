@@ -53,19 +53,41 @@ const Home = () => {
 
 export default Home;
 */
-
+/*
 import React from 'react';
 
 class Home extends React.Component {
   render() {
     return (
+      <div >
+        <h2>Welcome to SK SOFTWARE Company</h2>
+        <p>
+          We are a leading company dedicated to delivering innovative solutions. 
+        </p>
+        <p>
+          Explore our website to learn more about our services, products, and how we can assist you in achieving your goals.
+        </p>
+      </div>
+    );
+  }
+}
+
+export default Home;*/
+
+import React from 'react';
+import Todo from './Todo';
+
+class Home extends React.Component {
+  render() {
+    return (
       <div>
-        <h1>Welcome!!</h1>
-        <p>Sample home page!!!</p>
+        <h2>Welcome to SK SOFTWARE Company</h2>
+        <p>We are a leading company dedicated to delivering innovative solutions.</p>
+        <p>Explore our website to learn more about our services, products, and how we can assist you in achieving your goals.</p>
+        <Todo />
       </div>
     );
   }
 }
 
 export default Home;
-
